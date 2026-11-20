@@ -31,7 +31,6 @@
 
     <!-- script files -->
     <script src="./script/main.js" defer></script>
-
   </head>
   <body>
     <a class="screen-reader-text" href="#main">Skip to content</a>
@@ -40,36 +39,44 @@
     </header>
 
     <main id="main">
-     <h1>Welcome to Poppy's Magical Garden!</h1>
-  
-     <section class="game-info">
-      <h2>Start Playing</h2>
-      <div class="game-level">
-      <div class="level-time">
-      <p>Level : <span id="level"> Easy</span></p>
-      <div class="game-level-images">
-          <img src="./images/Poppy.png" alt="Easy Level">
-          <img src="./images/Whole.png" alt="Whole">
-          <img src="./images/Whole.png" alt="Whole">
-      </div>
-      </div>
-       
-      <div class="level-time">
-      <p>Score</p>
-      <p id="time-lift" class="time-lift">
-        000
-      </p>
-      </div>
-      <div class="level-time">
-      <p>Time Lift</p>
-      <p id="time-lift" class="time-lift">
-        00 : 00
-      </p>
-      </div>
-      </div>
-      <a href="./index.html" class="back-to-start"> Reset Game</a>
-     </section>
-      
+      <h1>Welcome to Poppy's Magical Garden!</h1>
+
+      <section class="game-info">
+        <h2>Start Playing</h2>
+        <div class="game-level">
+          <div class="level-time">
+            <p>Level : <span id="level"> Easy</span></p>
+            <div class="game-level-images">
+              <img src="./images/Poppy.png" alt="Easy Level" />
+              <img src="./images/Whole.png" alt="Whole" />
+              <img src="./images/Whole.png" alt="Whole" />
+            </div>
+          </div>
+
+          <div class="level-time">
+            <p>Score</p>
+            <p id="score" class="time-lift">000</p>
+          </div>
+          <div class="level-time">
+            <p>Time Left</p>
+            <p id="time-left" class="time-lift">00 : 00</p>
+          </div>
+        </div>
+
+        <div class="game-play-space">
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" />
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" />
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" />
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" />
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" />
+          <img src="./images/Whole-space.png" alt="Whole" class="hole" /> 
+        </div>
+        <div class="game-level">
+        <button id="start-game" class="back-to-start">Start Game</button>
+        <button id="stop-game" class="back-to-start">Stop Game</button>
+        <a href="./index.html" class="back-to-start"> Reset Game</a>
+        </div>
+      </section>
     </main>
 
     <footer>

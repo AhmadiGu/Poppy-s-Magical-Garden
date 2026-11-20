@@ -22,13 +22,19 @@
     <!-- Page Title -->
     <title>Poppy's Magical Garden | Whack-a-Mole</title>
 
-    <!-- Icons -->
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/normalize-fwd.css" />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/welcome-page.css" />
-
+  
+    <!-- script files -->
+    <script src="./script/main.js" defer></script>
 
   </head>
   <body>
@@ -41,51 +47,40 @@
      <h1>Welcome to Poppy's Magical Garden!</h1>
   
      <section class="game-info">
-      <h2>How to Play</h2>
-      <img src="./images/garden-whack-logo.png" alt="Whack-a-Mole Logo" class="game-logo"/>
-
-      <div class="game-level-card">
-        <a href="./levels.html" class="easy-level">
-          <h3> EASY</h3>
-          <div class="game-level-images">
-          <img src="./images/Poppy.png" alt="Easy Level">
-          <img src="./images/Whole.png" alt="Whole">
-          <img src="./images/Whole.png" alt="Whole">
-          </div>
-          <p><strong> 60 </strong> SECONDS</p>
-        </a>
-        <a href="#" class="medium-level">
-          <h3> MEDIUM</h3>
-          <div class="game-level-images">
-          <img src="./images/Poppy.png" alt="Medium Level">
-          <img src="./images/Poppy.png" alt="Medium Level">
-          <img src="./images/Whole.png" alt="Whole">
-          </div>
-          <p><strong> 40 </strong> SECONDS</p>
-        </a>
-        <a href="#" class="hard-level">
-          <h3> HARD</h3>
-          <div class="game-level-images">
-          <img src="./images/Poppy.png" alt="Hard Level">
-          <img src="./images/Poppy.png" alt="Hard Level">
-          <img src="./images/Poppy.png" alt="Hard Level">
-          </div>
-          <p><strong> 20 </strong> SECONDS</p>
-        </a>
+      <h2> Game Info</h2>
+      
+      <div class="game-menu" id="game-menu">
+      <a href="./levels.html">Start to Play</a>
+      <button id="how-to-play-btn">How to Play</button>
+      <button id="credits">Credits</button>
       </div>
 
-      <section class="game-rules">
-        <h3>Game Rules</h3>
-
-        <ul>
-          <li>Click on the moles as they pop up to earn points.</li>
-          <li>Each mole is worth 10 points.</li>
-          <li>The game ends when the timer runs out.</li>
-          <li>Try to get the highest score possible!</li>
+      <section class="game-sections" id="game-sections">
+        <div class="game-card" id="game-rules">
+        <h3>Game Rules</h3> 
+        <button type="button" class="close-button">X</button>
+        <p>Farmer Fern’s garden is in trouble! Sneaky moles keep popping out of their burrows to nibble her veggies, and she needs your help to chase them off before they ruin the harvest.
+        </p>
+       <ul>
+          <li>Tap or click a mole the moment it pops out of its hole, before it ducks back underground.</li>
+          <li>You have 30 seconds to scare off as many moles as you can.</li>
+          <li>Every mole you catch earns you 10 points.</li>
+          <li>Go for the High Score: Be quick, stay sharp, and see if you can protect the whole garden!</li>
         </ul>
+        </div>
 
-        <a href="#" class="start-game-button">Start Game</a>
-
+        <div class="game-card" id="game-credits">
+        <h3>Game Credits</h3> 
+        <button type="button" class="close-button">X</button>
+        <p>Farmer Fern’s garden is in trouble! Sneaky moles keep popping out of their burrows to nibble her veggies, and she needs your help to chase them off before they ruin the harvest.
+        </p>
+       <ul>
+          <li>Tap or click a mole the moment it pops out of its hole, before it ducks back underground.</li>
+          <li>You have 30 seconds to scare off as many moles as you can.</li>
+          <li>Every mole you catch earns you 10 points.</li>
+          <li>Go for the High Score: Be quick, stay sharp, and see if you can protect the whole garden!</li>
+        </ul>
+        </div>
       </section>
      </section>
 

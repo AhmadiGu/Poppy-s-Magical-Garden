@@ -46,22 +46,19 @@ h1,
 
 /* main */
 main {
-  margin: 0;
   width: 100%;
   min-height: 100vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("../images/background-image.gif");
 }
+
 
 .game-info {
   position: absolute;
-  z-index: 1;
-  top: 1.5rem;
-  left: 15.5rem;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
+  z-index: 100;
+  height: 100vh;
 }
 
 .game-level-card .game-level-images {
